@@ -1,8 +1,8 @@
 ## About
-	A random password generator written in node.js, hard-requirement: optimist
+	A random password generator written in node.js, optimist is required in the example test.js
 
 ## Usage 
-	node gen_pass.js [--count n] [--len m] [--sets groups] [--sep separator_string]
+	node test.js [--count n] [--len m] [--sets groups] [--sep separator_string]
 		n: defaults to 1
 		m: defaults to 8
 		sets: defaults to lun
@@ -14,28 +14,28 @@
 
 ## Examples
 
-	node gen_pass.js 
+	node test.js 
 	pHfvOiR9
 
-	node gen_pass.js --len 10
+	node test.js --len 10
 	ze1YEss5Wc
 
-	node gen_pass.js --count 3
+	node test.js --count 3
 	F7lxBIV1
 	iMxBTDMN
 	CyrQH1pB
 
-	node gen_pass.js --sets n --len 6 --count 5
+	node test.js --sets n --len 6 --count 5
 	201535
 	521572
 	621002
 	401485
 	084974
 
-	node gen_pass.js --sets lunp --len 12
+	node test.js --sets lunp --len 12
 	1}t6kxhlU$%X
 
-	node gen_pass.js --sets n --len 4 --count 5 --sep ':'
+	node test.js --sets n --len 4 --count 5 --sep ':'
 	8992:4065:0825:1191:8712
 
 ## Known issue

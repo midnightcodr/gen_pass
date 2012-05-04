@@ -1,5 +1,4 @@
-var argv=require('optimist').argv
-	,GenPass=function() {
+var GenPass=function() {
 	var lchars='abcdefghijklmnopqrstuvwxyz'
 		,uchars='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 		,nums='01234567890'
@@ -43,7 +42,4 @@ var argv=require('optimist').argv
 	return F;
 }();
 
-res=GenPass(argv);
-process.stdout.write(
-	res.join( typeof argv.sep != 'undefined'? argv.sep:'\n' )+'\n'
-);
+module.exports=GenPass;
