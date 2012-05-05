@@ -14,6 +14,18 @@ var GenPass=function() {
 			,sets=options.sets||defaults.sets
 			,a=''
 			,out=[]
+		if(!/^\d+$/.test(len)||len==0) {
+			console.log('%s is not a valid length. Must be a positive integer.', len);
+			return;
+		}
+		if(!/^\d+$/.test(count)||count==0) {
+			console.log('%s is not a valid count. Must be a positive integer.', count);
+			return;
+		}
+		if(!/[lunp]+/.test(sets)) {
+			console.log('Invalid sets settings, must be one or combination of l, u, n, p.');
+			return;
+		}
 		if(sets.indexOf('l')>-1) {
 			a+=lchars;
 		}
