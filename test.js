@@ -1,4 +1,4 @@
-var argv=require('optimist')
+var argv=require('optimist').argv
 	,GenPass=require('./gen_pass')
 	,res=GenPass(argv);
 process.stdout.write(
