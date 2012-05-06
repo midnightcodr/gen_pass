@@ -41,6 +41,14 @@
 	node test.js --lchars abcdefg --uchars UVWXYZ --exclude oO0
 	62deXZc1
 
+	node test.js --puns '?%#!' --count 6 --sets lunp
+	2Tr0UA%P
+	tIR6#Z3%
+	2bHuJAdj
+	cf1XR35b
+	1xK9i#Jd
+	5%rhEsxs
+
 ## Known issue
 	Output is not exactly expected if the separator is on of the followings:
 		'-', ' ', '\n'	
