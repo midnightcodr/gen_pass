@@ -50,5 +50,5 @@
 	5%rhEsxs
 
 ## Known issue
-	Output is not exactly expected if the separator is on of the followings:
+	Output is not exactly expected if the separator is one of the followings:
 		'-', ' ', '\n'	
