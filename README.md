@@ -2,15 +2,32 @@
 	A random password generator written in node.js, optimist is required in the example test.js
 
 ## Usage 
-	node test.js [--count n] [--len m] [--sets groups] [--sep separator_string]
-		n: defaults to 1
-		m: defaults to 8
-		sets: defaults to lun
+	node test.js 
+		[--count n]
+		[--len m]
+		[--sets groups]
+		[--lchars lower_case_chars]
+		[--uchars upper_case_chars]
+		[--nums numeric_chars]
+		[--puns punctuation_chars]
+		[--exclude exclude_chars]
+		[--sep separator_string]
+
+		option defaults:
+		n: 1
+		m: 8
+		groups: lun
 			available options:
 				l:lowercase chars
 				u:uppercase chars
 				n:numbers
 				p:punctuations
+		lower_case_chars: abcdefghijklmnopqrstuvwxyz
+		upper_case_cahrs: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+		numeric_chars: 01234567890
+		punctuation_chars: !"#$%&'()*+-./:;<=>?@[\\]^-`{|}~
+		exclude: '' (blank)
+		sep: '\n'
 
 ## Examples
 
