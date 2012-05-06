@@ -38,6 +38,9 @@
 	node test.js --sets n --len 4 --count 5 --sep ':'
 	8992:4065:0825:1191:8712
 
+	node test.js --lchars abcdefg --uchars UVWXYZ --exclude oO0
+	62deXZc1
+
 ## Known issue
 	Output is not exactly expected if the separator is on of the followings:
 		'-', ' ', '\n'	
